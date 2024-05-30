@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejerciciosdel1al5MauiApp.Ejercicio3"
+             Title="Ejercicio3">
+    
+    <StackLayout Padding="20">
+        <!-- Etiqueta para que el usuario pueda ingresar las calificaciones -->
+        <Label Text="Ingrese 5 calificaciones del alumno:" />
+        <!-- Entradas para que el usuario ingrese las calificaciones -->
+        <Entry Placeholder="Calificación 1" x:Name="entry1" Keyboard="Numeric" />
+        <Entry Placeholder="Calificación 2" x:Name="entry2" Keyboard="Numeric" />
+        <Entry Placeholder="Calificación 3" x:Name="entry3" Keyboard="Numeric" />
+        <Entry Placeholder="Calificación 4" x:Name="entry4" Keyboard="Numeric" />
+        <Entry Placeholder="Calificación 5" x:Name="entry5" Keyboard="Numeric" />
+        <!-- Botón para calcular las calificaciones -->
+        <Button Text="Click para calcular Promedio" Clicked="OnCalculateClicked" />
+        <!-- Etiqueta para mostrar el resultado -->
+        <Label x:Name="resultadoLabel" />
+        <!-- Imagen -->
+        <Image Source="https://cdn-icons-png.flaticon.com/512/6330/6330660.png"
+               Aspect="AspectFit"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               WidthRequest="70"
+               HeightRequest="70" />
+        <!-- Botón para regresar al menú principal -->
+        <Button x:Name="CounterBtn" Text="Menu principal" Clicked="OnCounterClicked"/>
+
+    </StackLayout>
+</ContentPage>

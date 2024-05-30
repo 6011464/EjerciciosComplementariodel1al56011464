@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejerciciosdel1al5MauiApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <!-- Botón para dirigirse al ejercicio1 -->
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Ejercicio1" 
+                Clicked="OnCounterClicked"/>
+
+            <!-- Botón para dirigirse al ejercicio2 -->
+
+
+            <Button
+               x:Name="CounterBtn1"
+               Text="Ejercico2" 
+               Clicked="OnCounterClicked1"/>
+
+            <!-- Botón para dirigirse al ejercicio3 -->
+
+
+            <Button
+               x:Name="CounterBtn2"
+               Text="Ejercicio3" 
+               Clicked="OnCounterClicked2"/>
+
+            <!-- Botón para dirigirse al ejercicio4 -->
+
+            <Button
+             x:Name="CounterBtn3"
+             Text="Ejercicio4" 
+             Clicked="OnCounterClicked3"/>
+
+            <!-- Botón para dirigirse al ejercicio5 -->
+
+            <Button
+             x:Name="CounterBtn4"
+             Text="Ejercicio5" 
+             Clicked="OnCounterClicked4"/>
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejerciciosdel1al5MauiApp.Ejercicio5"
+             Title="Ejercicio5">
+    <StackLayout Padding="20">
+        <!-- Etiqueta para ingresar la altura del rectángulo -->
+        <Label Text="Altura del rectángulo:" />
+        <!-- Entrada para que ingrese la altura -->
+        <Entry Placeholder="Altura" x:Name="alturaEntry" Keyboard="Numeric" />
+        <!-- Etiqueta para ingresar la base del rectángulo -->
+        <Label Text="Base del rectángulo:" />
+        <!-- Entrada para que el usuario ingrese la base -->
+        <Entry Placeholder="Base" x:Name="baseEntry" Keyboard="Numeric" />
+        <!-- Botón para calcular el perímetro y la superficie del rectángulo -->
+        <Button Text="Calcular" Clicked="CalcularClicked" />
+        <!-- Etiqueta para mostrar el perímetro del rectángulo -->
+        <Label x:Name="perimetroLabel" />
+        <!-- Etiqueta para mostrar la superficie del rectángulo -->
+        <Label x:Name="superficieLabel" />
+        <!-- Imagen -->
+        <Image Source="https://www.geogebra.org/resource/FanrFjHA/o6e58Z6gVUv1uown/material-FanrFjHA.png" 
+               Aspect="AspectFit"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               WidthRequest="90"
+               HeightRequest="90"/>
+        <!-- Botón para regresar al menú principal -->
+        <Button x:Name="CounterBtn" Text="Menu principal" Clicked="OnCounterClicked"/>
+    </StackLayout>
+</ContentPage>

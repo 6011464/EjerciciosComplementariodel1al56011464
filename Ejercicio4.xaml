@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejerciciosdel1al5MauiApp.Ejercicio4"
+             Title="Ejercicio4">
+    <StackLayout Padding="20">
+        <!-- Etiqueta para que el usuario ingrese un número positivo -->
+        <Label Text="Ingrese un número entero positivo:" />
+        <!-- Entrada para ingresar el número -->
+        <Entry Placeholder="Número entero" x:Name="numberEntry" Keyboard="Numeric" />
+        <!-- Botón para calcular el cuadrado y cubo -->
+        <Button Text="Calcular" Clicked="OnCalculateClicked" />
+        <!-- Etiqueta para mostrar el resultado-->
+        <Label x:Name="resultLabel" />
+        <!-- Imagen -->
+        <Image Source="https://storage.googleapis.com/portaleducativo-net-class-g3p6/biblioteca/contenidos/210208212186.png"
+                   Aspect="AspectFit"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   WidthRequest="70"
+                   HeightRequest="70" />
+        <!-- Botón para el menú principal -->
+        <Button x:Name="CounterBtn" Text="Menu principal" Clicked="OnCounterClicked"/>
+    </StackLayout>
+</ContentPage>
